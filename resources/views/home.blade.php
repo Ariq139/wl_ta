@@ -11,6 +11,7 @@
 		
 		<title>Zis is Hoomu Peeji</title>
 		
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/icon.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
 
 		<style type="text/css">
@@ -185,7 +186,7 @@
         Imagine-a-Company
       </h1>
       <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      <div class="ui huge primary button">Get Started</div>
     </div>
 
   </div>
