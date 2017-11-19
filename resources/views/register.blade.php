@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Login</title>
+		<title>Register</title>
 		
 		<!-- Standard Meta -->
 		<meta charset="utf-8" />

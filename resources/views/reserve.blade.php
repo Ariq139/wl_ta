@@ -24,18 +24,7 @@
   <script src="{{ asset('js/jquery.min.js') }}"></script>
   <script src="{{ asset('js/semantic.min.js') }}"></script>
   <script src="{{ asset('js/calendar.min.js') }}"></script>
-  <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
-  <script>
-	$('#example1').calendar();
-	$('#rangestart').calendar({
-	type: 'date',
-	endCalendar: $('#rangeend')
-	});
-	$('#rangeend').calendar({
-	type: 'date',
-	startCalendar: $('#rangestart')
-	});
-  </script>
+  
 </head>
 <body>
 <div class="ui container">
@@ -62,15 +51,35 @@
       </div>
     </div>
   </div>
-  <h3>Input</h3>
-  <div class="ui calendar" id="example1">
+  <h3>Date only</h3>
+  <div class="ui calendar" id="example2">
     <div class="ui input left icon">
       <i class="calendar icon"></i>
-      <input type="text" placeholder="Date/Time">
+      <input type="text" placeholder="Date">
     </div>
   </div>
   <br/>
   
+  <div class="ui checkbox">
+  <input name="example" type="checkbox">
+  <label>Make my profile visible</label>
+</div>
+<br/><br/>
+<button class="ui button">Cari</button>
+  
  </div>
+ <script>
+	$('#rangestart').calendar({
+	type: 'date',
+	endCalendar: $('#rangeend')
+	});
+	$('#rangeend').calendar({
+	type: 'date',
+	startCalendar: $('#rangestart')
+	});
+	$('#example2').calendar({
+	type: 'date'
+	});
+ </script>
 
 </body></html>
