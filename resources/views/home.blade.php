@@ -141,7 +141,7 @@
 				<a class="item">Careers</a>
 				<div class="right menu">
 					<div class="item">
-						<a class="ui button">Log in</a>
+						<a class="ui button" href="login">Log in</a>
 					</div>
 					<div class="item">
 						<a class="ui primary button">Sign Up</a>
@@ -156,7 +156,7 @@
 			<a class="item">Work</a>
 			<a class="item">Company</a>
 			<a class="item">Careers</a>
-			<a class="item">Login</a>
+			<a class="item" href="login">Login</a>
 			<a class="item">Signup</a>
 		</div>
 
@@ -175,7 +175,7 @@
         <a class="item">Company</a>
         <a class="item">Careers</a>
         <div class="right item">
-          <a class="ui inverted button">Log in</a>
+          <a class="ui inverted button" href="login">Log in</a>
           <a class="ui inverted button">Sign Up</a>
         </div>
       </div>
@@ -186,7 +186,7 @@
         Imagine-a-Company
       </h1>
       <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started</div>
+      <a class="ui huge primary button" href="reserve">Reservasi Sekarang</a>
     </div>
 
   </div>
@@ -270,9 +270,9 @@
           <h4 class="ui inverted header">Footer Header</h4>
           <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
