@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
 Route::get('login', function () {
@@ -21,4 +21,18 @@ Route::get('login', function () {
 
 Route::get('register', function () {
     return view('register');
+});
+
+/*Routes baru hasil dari php artisan make:auth*/
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+/**/
+
+//Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+
+Route::prefix('admin')->group(function() {
+	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+	Route::get('/', 'AdminController@index')->name('admin.dashboard');
 });

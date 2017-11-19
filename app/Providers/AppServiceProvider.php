@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+/* tambahan kode, import Schema */
+use Illuminate\Support\Facades\Schema;
+/**/
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +16,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        /* tambahan kode, menentukan panjang string*/
+        Schema::defaultStringLength(191);
+        /**/
     }
 
     /**
