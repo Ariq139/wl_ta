@@ -29,8 +29,7 @@
 			}
 		</style>
 		<script>
-			$(document)
-			.ready(function() {
+			$(document).ready(function() {
 				$('.ui.form')
 					.form({
 						fields: {
@@ -91,6 +90,7 @@
 							<input name="savepass" type="checkbox">
 							<label>Remember my password</label>
 						</div>
+						<br/><br/>
 						
 						<div class="ui fluid large teal submit button">Login</div>
 					</div>
@@ -100,7 +100,7 @@
 				</form>
 
 				<div class="ui message">
-					New member? You can sign up <a href="#">here</a>.
+					New member? You can sign up <a href="register">here</a>.
 				</div>
 			</div>
 		</div>
