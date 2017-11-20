@@ -8,3 +8,9 @@
 					<div class="panel-heading">USER Dashboard</div>
 					<div class="panel-body">
 						You are logged in as <strong>USER</strong>!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+@endsection
