@@ -8,18 +8,18 @@
                 <div class="panel-heading">Login Admin</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('admin.login.submit') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                            <label for="username" class="col-md-4 control-label">Username</label>
+                        <div class="form-group{{ $errors->has('username_adm') ? 'has-error' : '' }}">
+                            <label for="username_adm" class="col-md-4 control-label">Username</label>
 
                             <div class="col-md-6">
-                                <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+                                <input id="username_adm" type="text" class="form-control" name="username_adm" value="{{ old('username_adm') }}" required autofocus>
 
-                                @if ($errors->has('username'))
+                                @if ($errors->has('username_adm'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('username') }}</strong>
+                                        <strong>{{ $errors->first('username_adm') }}</strong>
                                     </span>
                                 @endif
                             </div>
