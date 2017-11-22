@@ -32,40 +32,37 @@
 	</head>
 	<body>
 		<div class="ui container">
-		<h3>Range</h3>
 		<div class="ui form">
 			<div class="two fields">
+			<div class="two fields">
 				<div class="field">
-				<label>Start date</label>
 					<div class="ui calendar" id="rangestart">
 						<div class="ui input left icon">
-							<i class="calendar icon"></i><input type="text" placeholder="Start">
+							<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
 						</div>
 					</div>
-				</div>
-				<div class="field">
-					<label>End date</label>
 					<div class="ui calendar" id="rangeend">
 						<div class="ui input left icon">
-							<i class="calendar icon"></i><input type="text" placeholder="End">
+							<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
 						</div>
+					</div>
+					
+				</div>
+				<div class="field">
+					<div class="ui checkbox">
+						<input name="example" type="checkbox">
+						<label>Sekali jalan?</label>
 					</div>
 				</div>
 			</div>
-		</div>
-		<h3>Date only</h3>
-			<div class="ui calendar" id="example2">
-				<div class="ui input left icon">
-					<i class="calendar icon"></i><input type="text" placeholder="Date">
-				</div>
 			</div>
-			<div class="ui form">
-				<div class="two fields">
-					<div class="field">
+		</div>
+		<div class="two fields">
+		<div class="two fields">
+			<div class="field">
 	
-					<label>Dewasa</label>
+				<label>Dewasa</label>
 					<select class="ui search dropdown">
-						<option value="">Jumlah</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -87,12 +84,8 @@
 						<option value="19">19</option>
 						<option value="20">20</option>
 					</select>
-				</div>
-				<div class="field">
-	
-				<label>Anak-anak</label>
-				<select class="ui search dropdown">
-						<option value="">Jumlah</option>
+					<label>Anak-anak</label>
+					<select class="ui search dropdown">
 						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -115,29 +108,27 @@
 						<option value="19">19</option>
 						<option value="20">20</option>
 					</select>
-				</div></br>
-				<div class="field">
-	
-				<label>Asal</label>
+			</div>
+			<div class="field">
 				<select class="ui search dropdown">
 					<option value="">Asal Stasiun</option>
-					<option value="1">1</option>
+					<option value="lem">Lempuyangan</option>
+					<option value="tug">Tugu</option>
 				</select>
 			</div>
 			<div class="field">
-	
-  <label>Tujuan</label>
-		<select class="ui search dropdown">
-			<option value="">Tujuan Stasiun</option>
-			<option value="0">0</option>
-		</select>
-	</div></div></div>
+				<select class="ui search dropdown">
+					<option value="">Tujuan Stasiun</option>
+					<option value="bek">Bekasi</option>
+					<option value="mgr">Manggarai</option>
+			</select>
+		</div>
+	</div>
+</div>
+</div>
   <br/>
   
-  <div class="ui checkbox">
-  <input name="example" type="checkbox">
-  <label>Make my profile visible</label>
-</div>
+	
 <br/><br/>
 <button class="ui button">Cari</button>
   

@@ -13,6 +13,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/icon.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
 
 		<style type="text/css">
 
@@ -183,10 +184,10 @@
 
     <div class="ui text container">
       <h1 class="ui inverted header">
-        Imagine-a-Company
+        Nama
       </h1>
       <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button" href="http://127.0.0.1:8000/reserve">Reservasi</div>
+      <div class="ui huge primary button" href="reserve">Reservasi</div>
     </div>
 
   </div>
