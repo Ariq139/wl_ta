@@ -141,10 +141,10 @@
 				<a class="item">Careers</a>
 				<div class="right menu">
 					<div class="item">
-						<a class="ui button">Log in</a>
+						<a class="ui button" href="http://127.0.0.1:8000/login">Log in</a>
 					</div>
 					<div class="item">
-						<a class="ui primary button">Sign Up</a>
+						<a class="ui primary button" href="http://127.0.0.1:8000/register">Register</a>
 					</div>
 				</div>
 			</div>
@@ -175,8 +175,8 @@
         <a class="item">Company</a>
         <a class="item">Careers</a>
         <div class="right item">
-          <a class="ui inverted button">Log in</a>
-          <a class="ui inverted button">Sign Up</a>
+          <a class="ui inverted button" href="http://127.0.0.1:8000/login">Log in</a>
+          <a class="ui inverted button" href="http://127.0.0.1:8000/register">Register</a>
         </div>
       </div>
     </div>
@@ -186,7 +186,7 @@
         Imagine-a-Company
       </h1>
       <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started</div>
+      <div class="ui huge primary button" href="http://127.0.0.1:8000/reserve">Reservasi</div>
     </div>
 
   </div>

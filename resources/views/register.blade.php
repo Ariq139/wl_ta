@@ -10,13 +10,13 @@
 
 		<!-- Site Properties -->
 		<title>Register</title>
-		<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
 		<script src="{{ asset('js/semantic.min.js') }}"></script>
 		<script src="{{ asset('js/jquery.min.js') }}"></script>
 
   <style type="text/css">
     body {
-      background-color: #DADADA;
+      background-color: #5ba2ff;
     }
     body > .grid {
       height: 100%;

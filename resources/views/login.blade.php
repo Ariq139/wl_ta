@@ -11,12 +11,16 @@
 		<!-- Site Properties -->
 		<title>Login</title>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
 		<script src="{{ asset('js/semantic.min.js') }}"></script>
 		<script src="{{ asset('js/jquery.min.js') }}"></script>
+		
+		<!-- CSRF Token -->
+		<meta name="csrf-token" content="NSGuqzL5ThDsGhLbxwtGhUHrcx8G6KK7f4MLnhGx">
 
 		<style type="text/css">
 			body {
-				background-color: #DADADA;
+				background-color: #5ba2ff;
 			}
 			body > .grid {
 				height: 100%;
@@ -52,10 +56,6 @@
                 {
                   type   : 'empty',
                   prompt : 'Please enter your password'
-                },
-                {
-                  type   : 'length[6]',
-                  prompt : 'Your password must be at least 6 characters'
                 }
               ]
             }
@@ -74,20 +74,21 @@
 						Log-in
 					</div>
 				</h2>
-				<form class="ui large form">
+				<form class="ui large form" method="POST" action="http://127.0.0.1:8000/login">
+					<input type="hidden" name="_token" value="NSGuqzL5ThDsGhLbxwtGhUHrcx8G6KK7f4MLnhGx">
 					<div class="ui stacked segment">
 						<div class="field">
 							<div class="ui left icon input">
-								<input type="text" name="email" placeholder="E-mail address">
+								<input id="email" type="text" name="email" placeholder="E-mail address" required autofocus>
 							</div>
 						</div>
 						<div class="field">
 							<div class="ui left icon input">
-								<input type="password" name="password" placeholder="Password">
+								<input id="password" type="password" name="password" placeholder="Password" required>
 							</div>
 						</div>
 						<div class="ui checkbox">
-							<input name="savepass" type="checkbox">
+							<input name="remember" type="checkbox">
 							<label>Remember my password</label>
 						</div>
 						<br/><br/>
@@ -104,6 +105,7 @@
 				</div>
 			</div>
 		</div>
-		
+		<!-- Scripts -->
+		<script src="http://127.0.0.1:8000/js/app.js"></script>
 	</body>
 </html>
