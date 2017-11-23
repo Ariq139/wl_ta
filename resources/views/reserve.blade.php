@@ -60,8 +60,8 @@
 							<div class="ui input left icon">
 								<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
 							</div>
-						</div></br>
-						<div class="three fields">
+						</div>
+						<div class="fields">
 						<div class="field"></br>
 							<label>Dewasa</label>
 							<select class="ui search dropdown">
@@ -87,9 +87,7 @@
 								<option value="20">20</option>
 							</select>
 						</div>
-						<div class="field">
-							
-						</div>
+						
 						<div class="field"></br>
 							<label>Anak-anak</label>
 							<select class="ui search dropdown">
