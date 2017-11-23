@@ -42,3 +42,12 @@ Route::prefix('admin')->group(function() {
 Route::get('reserve', function () {
     return view('reserve');
 });
+
+Route::get('reserve', function () {
+    return view('reserve');
+});
+
+Route::prefix('ka')->group(function() {
+	Route::get('/input', function () {return view('reserve');});
+	Route::get('/list', function () {return view('reserve');});
+});
