@@ -13,9 +13,9 @@
 		<link rel="stylesheet" href="http://127.0.0.1:8000/css/calendar.min.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
 
-		<style type="text/css">\
+		<style type="text/css">
 			body {
-				background-color: #5ba2ff;
+				background-color: #FFFFFF;
 			}
 			h2 {
 				margin: 2em 0em;
@@ -24,50 +24,76 @@
 				padding-top: 5em;
 				padding-bottom: 5em;
 			}
+			.ui.menu .item img.logo {
+				margin-right: 1.5em;
+			}
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="http://127.0.0.1:8000/js/semantic.min.js"></script>
+		<script src="{{ asset('js/semantic.min.js') }}"></script>
 		<script src="http://127.0.0.1:8000/js/calendar.min.js"></script>
   
 	</head>
 	<body>
-		
+		<div class="ui fixed inverted menu">
+			<div class="ui container">
+				<a href="/" class="header item">
+					<!--<img class="logo" src="Fixed%20Menu%20Example%20-%20Semantic_files/logo.png">-->
+					Nama
+				</a>
+				<a href="/" class="item">Home</a>
+				<a class="item" href="reserve">Reservasi</a>
+				<a class="item" href="about">Tentang Kami</a>
+				<div class="right menu">
+					<div class="item">
+						<a class="ui button" href="login">Log in</a>
+					</div>
+					<div class="item">
+						<a class="ui primary button" href="register">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="ui container">
-		<div class="ui form">
-			<div class="two fields">
+			<div class="ui large breadcrumb">
+				<a class="section">Home</a>
+				<i class="right chevron icon divider"></i>
+				<a class="active section">Reservasi</a>
+			</div>
+			<div class="ui form">
 				<div class="two fields">
-					<div class="field">
-					<div class="inline fields">
-									<label for="tiket"></label>
-									<div class="field">
-										<div class="ui radio checkbox">
-											<input name="tiket" checked="checked" tabindex="0" class="hidden" type="radio">
-											<label>Pulang Pergi</label>
+					<div class="two fields">
+						<div class="field">
+							<div class="inline fields">
+										<label for="tiket"></label>
+										<div class="field">
+											<div class="ui radio checkbox">
+												<input name="tiket" checked="checked" tabindex="0" class="hidden" type="radio">
+												<label>Pulang Pergi</label>
+											</div>
+										</div>
+										<div class="field">
+											<div class="ui radio checkbox">
+												<input name="tiket" tabindex="0" class="hidden" type="radio">
+												<label>Sekali Jalan</label>
+											</div>
 										</div>
 									</div>
-									<div class="field">
-										<div class="ui radio checkbox">
-											<input name="tiket" tabindex="0" class="hidden" type="radio">
-											<label>Sekali Jalan</label>
+									<div class="ui calendar" id="rangestart">
+										<div class="ui input left icon">
+											<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
 										</div>
 									</div>
-								</div>
-						<div class="ui calendar" id="rangestart">
-							<div class="ui input left icon">
-								<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
-							</div>
-						</div>
-						<div class="ui calendar" id="rangeend">
-							<div class="ui input left icon">
-								<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
-							</div>
-						</div>
-						<div class="fields">
-						<div class="field"></br>
-							<label>Dewasa</label>
-							<select class="ui search dropdown">
-								<option value="1">1</option>
-								<option value="2">2</option>
+									<div class="ui calendar" id="rangeend">
+										<div class="ui input left icon">
+											<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
+										</div>
+									</div>
+									<div class="fields">
+										<div class="field"></br>
+											<label>Dewasa</label>
+												<select class="ui search dropdown">
+													<option value="1">1</option>
+													<option value="2">2</option>
 								<option value="3">3</option>
 								<option value="4">4</option>
 								<option value="5">5</option>
