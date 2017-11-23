@@ -137,15 +137,13 @@
 		<div class="ui large top fixed hidden menu">
 			<div class="ui container">
 				<a class="active item">Home</a>
-				<a class="item">Work</a>
-				<a class="item">Company</a>
-				<a class="item">Careers</a>
+				<a class="item" href="reserve">Reservasi</a>
 				<div class="right menu">
 					<div class="item">
-						<a class="ui button" href="http://127.0.0.1:8000/login">Log in</a>
+						<a class="ui button" href="login">Log in</a>
 					</div>
 					<div class="item">
-						<a class="ui primary button" href="http://127.0.0.1:8000/register">Register</a>
+						<a class="ui primary button" href="register">Register</a>
 					</div>
 				</div>
 			</div>
@@ -154,11 +152,9 @@
 		<!-- Sidebar Menu -->
 		<div class="ui vertical inverted sidebar menu">
 			<a class="active item">Home</a>
-			<a class="item">Work</a>
-			<a class="item">Company</a>
-			<a class="item">Careers</a>
-			<a class="item">Login</a>
-			<a class="item">Signup</a>
+			<a class="item" href="reserve">Reservasi</a>
+			<a class="item" href="login">Login</a>
+			<a class="item" href="register">Signup</a>
 		</div>
 
 
@@ -172,12 +168,10 @@
           <i class="sidebar icon"></i>
         </a>
         <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
+        <a class="item" href="reserve">Reservasi</a>
         <div class="right item">
-          <a class="ui inverted button" href="http://127.0.0.1:8000/login">Log in</a>
-          <a class="ui inverted button" href="http://127.0.0.1:8000/register">Register</a>
+          <a class="ui inverted button" href="login">Log in</a>
+          <a class="ui inverted button" href="register">Register</a>
         </div>
       </div>
     </div>
