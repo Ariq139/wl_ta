@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('about', function () {
+    return view('about');
+});
+
 Route::get('login', function () {
     return view('login');
 });
@@ -37,10 +41,6 @@ Route::prefix('admin')->group(function() {
 	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 	Route::get('/', 'AdminController@index')->name('admin.dashboard');
 	Route::post('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
-});
-
-Route::get('reserve', function () {
-    return view('reserve');
 });
 
 Route::get('reserve', function () {

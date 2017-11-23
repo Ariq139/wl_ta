@@ -11,7 +11,7 @@
 		<title>Reservasi</title>
 		<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/css/semantic.min.css">
 		<link rel="stylesheet" href="http://127.0.0.1:8000/css/calendar.min.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
 
 		<style type="text/css">\
 			body {
@@ -31,6 +31,7 @@
   
 	</head>
 	<body>
+		
 		<div class="ui container">
 		<div class="ui form">
 			<div class="two fields">
@@ -144,13 +145,36 @@
 			</div>
 		</div>
 	</div></div>
-	<br/>
-  
-	
-	<br/><br/>
-	
-  
 </div>
+
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+            <a href="#" class="item">Religious Ceremonies</a>
+            <a href="#" class="item">Gazebo Plans</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Banana Pre-Order</a>
+            <a href="#" class="item">DNA FAQ</a>
+            <a href="#" class="item">How To Access</a>
+            <a href="#" class="item">Favorite X-Men</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 <script>
 	$('#rangestart').calendar({
 		type: 'date',

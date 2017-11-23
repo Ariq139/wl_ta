@@ -138,6 +138,7 @@
 			<div class="ui container">
 				<a class="active item">Home</a>
 				<a class="item" href="reserve">Reservasi</a>
+				<a class="item" href="about">Tentang Kami</a>
 				<div class="right menu">
 					<div class="item">
 						<a class="ui button" href="login">Log in</a>
@@ -153,6 +154,7 @@
 		<div class="ui vertical inverted sidebar menu">
 			<a class="active item">Home</a>
 			<a class="item" href="reserve">Reservasi</a>
+			<a class="item" href="about">Tentang Kami</a>
 			<a class="item" href="login">Login</a>
 			<a class="item" href="register">Signup</a>
 		</div>
@@ -169,6 +171,7 @@
         </a>
         <a class="active item">Home</a>
         <a class="item" href="reserve">Reservasi</a>
+		<a class="item" href="about">Tentang Kami</a>
         <div class="right item">
           <a class="ui inverted button" href="login">Log in</a>
           <a class="ui inverted button" href="register">Register</a>
@@ -180,8 +183,8 @@
       <h1 class="ui inverted header">
         Nama
       </h1>
-      <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button" href="reserve">Reservasi</div>
+      <h2>Deskripsi</h2>
+      <a href="reserve"><div class="ui huge primary button">Reservasi</div></a>
     </div>
 
   </div>
@@ -191,9 +194,14 @@
       <div class="row">
         <div class="eight wide column">
           <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie nibh id nibh hendrerit viverra. 
+		  Proin vulputate risus id augue facilisis cursus. 
+		  Pellentesque viverra velit vitae enim posuere, in molestie tellus imperdiet. 
+		  Cras tortor ipsum, posuere nec viverra quis, tincidunt ut lectus. 
+		  Nullam vel ullamcorper leo, eget semper purus. 
+		  Fusce tortor ipsum, commodo a arcu eget, blandit dictum lacus. Aenean ullamcorper lectus eget convallis dictum. </p>
           <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie nibh id nibh hendrerit viverra. Proin vulputate risus id augue facilisis cursus. Pellentesque viverra velit vitae enim posuere, in molestie tellus imperdiet. Cras tortor ipsum, posuere nec viverra quis, tincidunt ut lectus. Nullam vel ullamcorper leo, eget semper purus. Fusce tortor ipsum, commodo a arcu eget, blandit dictum lacus. Aenean ullamcorper lectus eget convallis dictum. </p>
         </div>
         <div class="six wide right floated column">
           <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
@@ -228,13 +236,13 @@
   <div class="ui vertical stripe segment">
     <div class="ui text container">
       <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie nibh id nibh hendrerit viverra. Proin vulputate risus id augue facilisis cursus. Pellentesque viverra velit vitae enim posuere, in molestie tellus imperdiet. Cras tortor ipsum, posuere nec viverra quis, tincidunt ut lectus.</p>
       <a class="ui large button">Read More</a>
       <h4 class="ui horizontal header divider">
         <a href="#">Case Studies</a>
       </h4>
       <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+      <p>YLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie nibh id nibh hendrerit viverra. Proin vulputate risus id augue facilisis cursus. Pellentesque viverra velit vitae enim posuere, in molestie tellus imperdiet. Cras tortor ipsum, posuere nec viverra quis, tincidunt ut lectus.</p>
       <a class="ui large button">I'm Still Quite Interested</a>
     </div>
   </div>
