@@ -25,7 +25,7 @@
 				padding-bottom: 5em;
 			}
 		</style>
-		<script src="http://127.0.0.1:8000/js/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="http://127.0.0.1:8000/js/semantic.min.js"></script>
 		<script src="http://127.0.0.1:8000/js/calendar.min.js"></script>
   
@@ -34,117 +34,140 @@
 		<div class="ui container">
 		<div class="ui form">
 			<div class="two fields">
-			<div class="two fields">
-				<div class="field">
-					<div class="ui calendar" id="rangestart">
-						<div class="ui input left icon">
-							<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
+				<div class="two fields">
+					<div class="field">
+					<div class="inline fields">
+									<label for="tiket"></label>
+									<div class="field">
+										<div class="ui radio checkbox">
+											<input name="tiket" checked="checked" tabindex="0" class="hidden" type="radio">
+											<label>Pulang Pergi</label>
+										</div>
+									</div>
+									<div class="field">
+										<div class="ui radio checkbox">
+											<input name="tiket" tabindex="0" class="hidden" type="radio">
+											<label>Sekali Jalan</label>
+										</div>
+									</div>
+								</div>
+						<div class="ui calendar" id="rangestart">
+							<div class="ui input left icon">
+								<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
+							</div>
 						</div>
+						<div class="ui calendar" id="rangeend">
+							<div class="ui input left icon">
+								<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
+							</div>
+						</div></br>
+						<div class="three fields">
+						<div class="field"></br>
+							<label>Dewasa</label>
+							<select class="ui search dropdown">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+							</select>
+						</div>
+						<div class="field">
+							
+						</div>
+						<div class="field"></br>
+							<label>Anak-anak</label>
+							<select class="ui search dropdown">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+							</select>
+						</div>
+						
 					</div>
-					<div class="ui calendar" id="rangeend">
-						<div class="ui input left icon">
-							<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
-						</div>
+					
+						<select class="ui search dropdown">
+						<option value="">Asal Stasiun</option>
+						<option value="lem">Lempuyangan</option>
+						<option value="tug">Tugu</option>
+					</select>
+					<select class="ui search dropdown">
+						<option value="">Tujuan Stasiun</option>
+						<option value="bek">Bekasi</option>
+						<option value="mgr">Manggarai</option>
+					</select>
+					</div>
+					<div class="field">
+					
 					</div>
 					
 				</div>
+			</div>
+		<div class="two fields">
+			<div class="two fields">
+				
 				<div class="field">
-					<div class="ui checkbox">
-						<input name="example" type="checkbox">
-						<label>Sekali jalan?</label>
-					</div>
+					
+					<div class="field ui fluid large teal submit button">Cari</div>
 				</div>
 			</div>
-			</div>
 		</div>
-		<div class="two fields">
-		<div class="two fields">
-			<div class="field">
-	
-				<label>Dewasa</label>
-					<select class="ui search dropdown">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						<option value="13">13</option>
-						<option value="14">14</option>
-						<option value="15">15</option>
-						<option value="16">16</option>
-						<option value="17">17</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-					</select>
-					<label>Anak-anak</label>
-					<select class="ui search dropdown">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						<option value="13">13</option>
-						<option value="14">14</option>
-						<option value="15">15</option>
-						<option value="16">16</option>
-						<option value="17">17</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-					</select>
-			</div>
-			<div class="field">
-				<select class="ui search dropdown">
-					<option value="">Asal Stasiun</option>
-					<option value="lem">Lempuyangan</option>
-					<option value="tug">Tugu</option>
-				</select>
-			</div>
-			<div class="field">
-				<select class="ui search dropdown">
-					<option value="">Tujuan Stasiun</option>
-					<option value="bek">Bekasi</option>
-					<option value="mgr">Manggarai</option>
-			</select>
-		</div>
-	</div>
-</div>
-</div>
-  <br/>
+	</div></div>
+	<br/>
   
 	
-<br/><br/>
-<button class="ui button">Cari</button>
+	<br/><br/>
+	
   
- </div>
- <script>
+</div>
+<script>
 	$('#rangestart').calendar({
-	type: 'date',
-	endCalendar: $('#rangeend')
+		type: 'date',
+		endCalendar: $('#rangeend')
 	});
 	$('#rangeend').calendar({
-	type: 'date',
-	startCalendar: $('#rangestart')
+		type: 'date',
+		startCalendar: $('#rangestart')
 	});
-	$('#example2').calendar({
-	type: 'date'
-	});
- </script>
+	$('select.dropdown')
+		.dropdown()
+	;
+	$('.ui.radio.checkbox')
+		.checkbox()
+	;
+</script>
 
 </body></html>
