@@ -47,7 +47,15 @@ Route::get('reserve', function () {
     return view('reserve');
 });
 
-Route::prefix('ka')->group(function() {
-	Route::get('/input', function () {return view('reserve');});
-	Route::get('/list', function () {return view('reserve');});
+
+	Route::get('ka-input', function () {return view('admin.input-ka');});
+	Route::get('ka-list', function () {return view('admin.list-ka');});
+
+
+	Route::get('berita-input', function () {return view('admin.input-berita');});
+	Route::get('berita-list', function () {return view('admin.list-berita');});
+
+
+Route::get('reserve-list', function () {
+    return view('admin.list-reservasi');
 });
