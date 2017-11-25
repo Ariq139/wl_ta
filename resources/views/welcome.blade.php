@@ -100,9 +100,6 @@
 				margin-top: 0.5em;
 				font-size: 1.5em;
 			}
-			.masthead.bg2:after {
-				background-image: "{{ asset('images/kereta-api-1.png') }}";
-			}
 		}
 
 		</style>
@@ -187,7 +184,7 @@
       <h1 class="ui inverted header">
         Nama
       </h1>
-      <h2>Deskripsi</h2>
+      <!--<h2>Deskripsi</h2>-->
       <a href="reserve"><div class="ui huge primary button">Reservasi</div></a>
     </div>
 	</div>
