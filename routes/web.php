@@ -19,6 +19,10 @@ Route::get('about', function () {
     return view('about');
 });
 
+/*
+    User Routes
+*/
+
 Route::get('login', function () {
     return view('login');
 });
@@ -56,6 +60,10 @@ Route::get('reserve/ticket', function () {
     return view('reserve_ticket');
 });
 
+Route::get('reserve', function () {
+    return view('reserve');
+});
+
 /*Routes baru hasil dari php artisan make:auth*/
 Auth::routes();
 
@@ -63,7 +71,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 /**/
 
-//Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+/*
+    Admin Routes
+*/
 
 Route::prefix('admin')->group(function() {
 	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
@@ -72,19 +82,12 @@ Route::prefix('admin')->group(function() {
 	Route::post('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 });
 
-Route::get('reserve', function () {
-    return view('reserve');
-});
+/*jika belum login sebagai admin bisa mengaksesnya*/
+//Route::get('ka-input', function () {return view('admin.input-ka');});
 
-
-	Route::get('ka-input', function () {return view('admin.input-ka');});
-	Route::get('ka-list', function () {return view('admin.list-ka');});
-
-
-	Route::get('berita-input', function () {return view('admin.input-berita');});
-	Route::get('berita-list', function () {return view('admin.list-berita');});
-
-
-Route::get('reserve-list', function () {
-    return view('admin.list-reservasi');
-});
+/*jika sudah login bisa mengaksesnya*/
+Route::get('ka-input', 'AdminController@kainput')->name('kainput');
+Route::get('ka-list', 'AdminController@kalist')->name('kalist');
+Route::get('berita-input', 'AdminController@beritainput')->name('beritainput');
+Route::get('berita-list', 'AdminController@beritalist')->name('beritalist');
+Route::get('reserve-list', 'AdminController@reservelist')->name('reservelist');
