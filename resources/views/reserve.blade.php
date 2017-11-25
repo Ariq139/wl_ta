@@ -73,13 +73,13 @@
 							<div class="inline fields">
 										<div class="field">
 											<div class="ui radio checkbox">
-												<input name="tiket" checked tabindex="0" class="hidden" type="radio" value="pp">
+												<input name="tiket" checked tabindex="0" class="hidden" type="radio" value="pp" id="pp">
 												<label>Pulang Pergi</label>
 											</div>
 										</div>
 										<div class="field">
 											<div class="ui radio checkbox">
-												<input name="tiket" tabindex="0" class="hidden" type="radio" value="single">
+												<input name="tiket" tabindex="0" class="hidden" type="radio" value="single" id="single">
 												<label>Sekali Jalan</label>
 											</div>
 										</div>
@@ -203,6 +203,12 @@
     </div>
   </div>
 <script>
+	$('select.dropdown')
+		.dropdown()
+	;
+	$('.ui.radio.checkbox')
+		.checkbox()
+	;
 	$('#start').calendar({
 		type: 'date',
 		endCalendar: $('#end')
@@ -211,12 +217,6 @@
 		type: 'date',
 		startCalendar: $('#start')
 	});
-	$('select.dropdown')
-		.dropdown()
-	;
-	$('.ui.radio.checkbox')
-		.checkbox()
-	;
 </script>
 
 

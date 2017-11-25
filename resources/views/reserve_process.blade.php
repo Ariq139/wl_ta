@@ -1,8 +1,11 @@
 <?php
 //require_once 'koneksi.php';
 
+$tiket = $_POST['tiket'];
 $start = $_POST['start'];
-$end = $_POST['end'];
+if ($tiket == "pp"){
+	$end = $_POST['end'];
+}
 $dewasa = $_POST['dewasa'];
 $anak = $_POST['anak'];
 $asal = $_POST['asal'];
