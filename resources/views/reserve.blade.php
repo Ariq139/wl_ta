@@ -63,33 +63,33 @@
 				<a class="section">Home</a>
 				<i class="right chevron icon divider"></i>
 				<a class="active section">Reservasi</a>
-				</br></br></br></br></br></br></br></br></br>
+				</br></br></br></br></br></br></br></br>
 			</div>
 			<div class="ui form">
+				<form action="reserve/process" method="POST">
 				<div class="two fields">
 					<div class="two fields">
 						<div class="field">
 							<div class="inline fields">
-										<label for="tiket"></label>
 										<div class="field">
 											<div class="ui radio checkbox">
-												<input name="tiket" checked="checked" tabindex="0" class="hidden" type="radio">
+												<input name="tiket" checked tabindex="0" class="hidden" type="radio" value="pp">
 												<label>Pulang Pergi</label>
 											</div>
 										</div>
 										<div class="field">
 											<div class="ui radio checkbox">
-												<input name="tiket" tabindex="0" class="hidden" type="radio">
+												<input name="tiket" tabindex="0" class="hidden" type="radio" value="single">
 												<label>Sekali Jalan</label>
 											</div>
 										</div>
 									</div>
-									<div class="ui calendar" id="rangestart">
+									<div class="ui calendar" id="start" name="start">
 										<div class="ui input left icon">
 											<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
 										</div>
 									</div>
-									<div class="ui calendar" id="rangeend">
+									<div class="ui calendar" id="end" name="end">
 										<div class="ui input left icon">
 											<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
 										</div>
@@ -97,7 +97,7 @@
 										<div class="two fields">
 											<div class="field">
 											<label>Dewasa</label>
-												<select class="ui fluid search dropdown" name="dewasa">
+												<select class="ui fluid search dropdown" id="dewasa" name="dewasa">
 													<option value="1">1</option>
 													<option value="2">2</option>
 													<option value="3">3</option>
@@ -123,7 +123,7 @@
 										
 										<div class="field">
 										<label>Anak-anak</label>
-												<select class="ui fluid search dropdown" name="anak">
+												<select class="ui fluid search dropdown" id="anak" name="anak">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -149,12 +149,12 @@
 											</div>
 										</div>
 					
-						<select class="ui search dropdown">
-						<option value="">Asal Stasiun</option>
-						<option value="lem">Lempuyangan</option>
-						<option value="tug">Tugu</option>
+						<select class="ui search dropdown" id="asal" name="asal">
+							<option value="">Asal Stasiun</option>
+							<option value="lem">Lempuyangan</option>
+							<option value="tug">Tugu</option>
 					</select>
-					<select class="ui search dropdown">
+					<select class="ui search dropdown" id="tujuan" name="tujuan">
 						<option value="">Tujuan Stasiun</option>
 						<option value="bek">Bekasi</option>
 						<option value="mgr">Manggarai</option>
@@ -163,19 +163,16 @@
 					<div class="field">
 					
 					</div>
-					
 				</div>
 			</div>
 		<div class="two fields">
 			<div class="two fields">
-				
 				<div class="field">
-					
-					<div class="field ui fluid large teal submit button">Cari</div>
+					<button class="field ui fluid large teal submit button" type=submit>Cari</button>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div></form>
 </div>
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
@@ -206,13 +203,13 @@
     </div>
   </div>
 <script>
-	$('#rangestart').calendar({
+	$('#start').calendar({
 		type: 'date',
-		endCalendar: $('#rangeend')
+		endCalendar: $('#end')
 	});
-	$('#rangeend').calendar({
+	$('#end').calendar({
 		type: 'date',
-		startCalendar: $('#rangestart')
+		startCalendar: $('#start')
 	});
 	$('select.dropdown')
 		.dropdown()
