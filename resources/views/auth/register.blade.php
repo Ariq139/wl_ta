@@ -11,15 +11,43 @@
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+                        <div class="form-group{{ $errors->has('nik') ? ' has-error' : '' }}">
+                            <label for="nik" class="col-md-4 control-label">NIK</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="nik" type="text" class="form-control" name="nik" value="{{ old('nik') }}" required autofocus>
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('nik'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>{{ $errors->first('nik') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
+                            <label for="nama" class="col-md-4 control-label">Nama</label>
+
+                            <div class="col-md-6">
+                                <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}" required autofocus>
+
+                                @if ($errors->has('nama'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('nama') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('alamat') ? ' has-error' : '' }}">
+                            <label for="alamat" class="col-md-4 control-label">Alamat</label>
+
+                            <div class="col-md-6">
+                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}" required autofocus>
+
+                                @if ($errors->has('alamat'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('alamat') }}</strong>
                                     </span>
                                 @endif
                             </div>
