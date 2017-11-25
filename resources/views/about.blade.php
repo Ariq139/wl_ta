@@ -76,26 +76,6 @@
     <h1 class="ui header">Semantic UI Fixed Template</h1>
     <p>This is a basic fixed menu template using fixed size containers.</p>
     <p>A text container is used for the main container, which is useful for single column layouts</p>
-	<div class="ui card">
-		<div class="image">
-			<img src="/images/avatar2/large/kristy.png">
-		</div>
-		<div class="content">
-			<a class="header">Kristy</a>
-			<div class="meta">
-				<span class="date">Joined in 2013</span>
-			</div>
-			<div class="description">
-				Kristy is an art director living in New York.
-			</div>
-		</div>
-  <div class="extra content">
-    <a>
-      <i class="user icon"></i>
-      22 Friends
-    </a>
-  </div>
-</div>
     <p>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie nibh id nibh hendrerit viverra. Proin vulputate risus id augue facilisis cursus. Pellentesque viverra velit vitae enim posuere, in molestie tellus imperdiet. Cras tortor ipsum, posuere nec viverra quis, tincidunt ut lectus. Nullam vel ullamcorper leo, eget semper purus. Fusce tortor ipsum, commodo a arcu eget, blandit dictum lacus. Aenean ullamcorper lectus eget convallis dictum.

@@ -29,23 +29,23 @@ Route::get('register', function () {
 
 //reserve routes
 Route::get('reserve/process', function () {
-    return view('process');
+    return view('reserve_process');
 });
 
 Route::get('reserve/search', function () {
-    return view('search');
+    return view('reserve_search');
 });
 
 Route::get('reserve/details', function () {
-    return view('details');
+    return view('reserve_details');
 });
 
 Route::get('reserve/confirm', function () {
-    return view('confirm');
+    return view('reserve_confirm');
 });
 
 Route::get('reserve/transfer', function () {
-    return view('transfer');
+    return view('reserve_transfer');
 });
 
 Route::get('reserve/transfer/process', function () {
@@ -53,7 +53,7 @@ Route::get('reserve/transfer/process', function () {
 });
 
 Route::get('reserve/ticket', function () {
-    return view('ticket');
+    return view('reserve_ticket');
 });
 
 /*Routes baru hasil dari php artisan make:auth*/
