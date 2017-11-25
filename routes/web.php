@@ -27,6 +27,27 @@ Route::get('register', function () {
     return view('register');
 });
 
+//reserve routes
+Route::get('reserve/process', function () {
+    return view('process');
+});
+
+Route::get('reserve/search', function () {
+    return view('search');
+});
+
+Route::get('reserve/details', function () {
+    return view('details');
+});
+
+Route::get('reserve/confirm', function () {
+    return view('confirm');
+});
+
+Route::get('reserve/ticket_out', function () {
+    return view('ticket_out');
+});
+
 /*Routes baru hasil dari php artisan make:auth*/
 Auth::routes();
 
