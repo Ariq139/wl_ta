@@ -44,8 +44,16 @@ Route::get('reserve/confirm', function () {
     return view('confirm');
 });
 
-Route::get('reserve/ticket_out', function () {
-    return view('ticket_out');
+Route::get('reserve/transfer', function () {
+    return view('transfer');
+});
+
+Route::get('reserve/transfer/process', function () {
+    return view('transfer_process');
+});
+
+Route::get('reserve/ticket', function () {
+    return view('ticket');
 });
 
 /*Routes baru hasil dari php artisan make:auth*/
