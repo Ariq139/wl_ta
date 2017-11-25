@@ -47,15 +47,13 @@ Route::get('reserve', function () {
     return view('reserve');
 });
 
+	/*routing biasa, jika belum logi sebagai admin, tetap masih bisa mengakses*/
+	//Route::get('ka-input', function () {return view('admin.input-ka');});
 
-	Route::get('ka-input', function () {return view('admin.input-ka');});
-	Route::get('ka-list', function () {return view('admin.list-ka');});
+	/*routing, jika belum login sebagai admin belum dapat mengakses*/
+	Route::get('ka-input', 'AdminController@kainput')->name('admin.kainput');	
+	Route::get('ka-list', 'AdminController@kalist')->name('admin.kalist');
 
-
-	Route::get('berita-input', function () {return view('admin.input-berita');});
-	Route::get('berita-list', function () {return view('admin.list-berita');});
-
-
-Route::get('reserve-list', function () {
-    return view('admin.list-reservasi');
-});
+	Route::get('berita-input', 'AdminController@beritainput')->name('admin.input');	
+	Route::get('berita-list', 'AdminController@beritalist')->name('admin.kalist');
+	Route::get('reserve-list', 'AdminController@reservelist')->name('admin.reservelist');
