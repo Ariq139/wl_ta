@@ -75,12 +75,12 @@
 			</div>
 			<div class="two fields">
 				<div class="required field">
-      <label>Kewarganegaraan</label>
-      <div class="ui fluid search selection dropdown">
-        <input name="country" type="hidden">
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Country</div>
-        <div class="menu">
+					<label>Kewarganegaraan</label>
+					<div class="ui fluid search selection dropdown">
+						<input name="country" type="hidden">
+							<i class="dropdown icon"></i>
+							<div class="default text">Select Country</div>
+							<div class="menu">
 		<div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
     <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
     <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>

@@ -1,11 +1,9 @@
-@extends('layouts.resmaster')
-
-@section('title')
+<?php $__env->startSection('title'); ?>
   <title>Reservasi - Pembayaran</title>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('style')
+<?php $__env->startSection('style'); ?>
   <style type="text/css">
   body {
     background-color: #FFFFFF;
@@ -25,12 +23,12 @@
   }
   </style>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 </br></br></br></br></br>
 			<div class="ui large breadcrumb">
-				<a class="section" href="{{ url('/') }}">Home</a>
+				<a class="section" href="<?php echo e(url('/')); ?>">Home</a>
 				<i class="right chevron icon divider"></i>
 				<a class="section">Reservasi</a>
 				<i class="right chevron icon divider"></i>
@@ -43,9 +41,10 @@
 				<div class="active section">Pembayaran</div>
 			</div></br></br></br>
 
-@endsection
+<?php $__env->stopSection(); ?>
  
 
-@section('scripts')
+<?php $__env->startSection('scripts'); ?>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.resmaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,11 +1,9 @@
-@extends('layouts.resmaster')
-
-@section('title')
+<?php $__env->startSection('title'); ?>
   <title>Tiket</title>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('style')
+<?php $__env->startSection('style'); ?>
   <style type="text/css">
   body {
     background-color: #FFFFFF;
@@ -25,9 +23,9 @@
   }
   </style>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 </br></br></br></br></br>
 
 <h3>Terima Kasih</h3>
@@ -48,9 +46,10 @@
 					<button class="field ui fluid large grey submit button" type=submit>Kembali</button>
 				</div>
 			</div>
-@endsection
+<?php $__env->stopSection(); ?>
  
 
-@section('scripts')
+<?php $__env->startSection('scripts'); ?>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.resmaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
