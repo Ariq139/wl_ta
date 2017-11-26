@@ -87,7 +87,16 @@ Route::prefix('admin')->group(function() {
 
 /*jika sudah login bisa mengaksesnya*/
 Route::get('ka-input', 'AdminController@kainput')->name('kainput');
+Route::get('ka-input', 'AdminController@create')->name('kacreate');
 Route::get('ka-list', 'AdminController@kalist')->name('kalist');
+Route::get('ka-list', 'AdminController@kalistindex')->name('kalistindex');
+Route::post('ka-store', 'AdminController@store')->name('kastore');
+
+
+     Route::get('/show/{id}', 'KendaraanController@show');
+     Route::post('/update/{id}', 'KendaraanController@update');
+     Route::post('/destroy/{id}', 'KendaraanController@destroy');
+
 Route::get('berita-input', 'AdminController@beritainput')->name('beritainput');
 Route::get('berita-list', 'AdminController@beritalist')->name('beritalist');
 Route::get('reserve-list', 'AdminController@reservelist')->name('reservelist');
