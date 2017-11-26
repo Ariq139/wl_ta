@@ -36,6 +36,14 @@
 				<i class="right chevron icon divider"></i>
 				<div class="active section">Cari</div>
 			</div></br></br></br>
+			
+			<h5>Tanggal Berangkat : </h5>
+			<h5>Tujuan : </h5>
+			<h5>x orang Dewasa, x orang anak-anak</h5>
+			
+			
+			</br>
+			<h3>Tiket yang tersedia</h3>
 			<table class="ui single line table">
 				<thead>
 					<tr>

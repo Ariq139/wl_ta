@@ -72,7 +72,7 @@
       </div>
     </div>
   </div>
-	<?php echo $__env->yieldContent('scripts'); ?>
+<?php echo $__env->yieldContent('scripts'); ?>
 
 
 </body></html>

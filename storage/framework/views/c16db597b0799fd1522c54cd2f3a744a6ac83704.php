@@ -37,6 +37,7 @@
 				<i class="right chevron icon divider"></i>
 				<div class="active section">Detail Tamu</div>
 			</div></br></br></br>
+			<h3 class="ui dividing header">Detail Tamu x</h3>
 			<div class="inline fields">
 			<label>Jenis Kelamin</label>
 			<div class="field">
@@ -58,28 +59,27 @@
 				</div>
 			</div>
 			</div>
-		<label>Name</label>
-			<div class="inline fields">
+			<div class="required inline fields">
 				
 				<div class="eight wide field">
-					
-					<input placeholder="First Name" type="text" required>
+					<input placeholder="Nama Depan" type="text">
 				</div>
 				<div class="three wide field">
-					<input placeholder="Middle Name" type="text">
+					<input placeholder="Nama Tengah" type="text">
 				</div>
 				<div class="five wide field">
-					<input placeholder="Last Name" type="text" required>
+					<input placeholder="Nama Belakang" type="text">
 				</div>
 			</div>
 			<div class="two fields">
-				<div class="field">
-      <label>Country</label>
+				<div class="required field">
+      <label>Kewarganegaraan</label>
       <div class="ui fluid search selection dropdown">
-        <input name="country" type="hidden" required>
+        <input name="country" type="hidden">
         <i class="dropdown icon"></i>
         <div class="default text">Select Country</div>
         <div class="menu">
+		<div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
     <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
     <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
     <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
@@ -183,7 +183,6 @@
     <div class="item" data-value="is"><i class="is flag"></i>Iceland</div>
     <div class="item" data-value="in"><i class="in flag"></i>India</div>
     <div class="item" data-value="io"><i class="io flag"></i>Indian Ocean Territory</div>
-    <div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
     <div class="item" data-value="ir"><i class="ir flag"></i>Iran</div>
     <div class="item" data-value="iq"><i class="iq flag"></i>Iraq</div>
     <div class="item" data-value="ie"><i class="ie flag"></i>Ireland</div>
@@ -327,12 +326,12 @@
 </div>
 
 			</div>
-			<div class="field">
+			<div class="required field">
 				<label>Tanggal Lahir</label>
 				<div class="ui calendar" id="dob">
 					<div class="ui input left icon">
 						<i class="calendar icon"></i>
-						<input type="text" placeholder="Date" required>
+						<input type="text" placeholder="Date">
 					</div>
 				</div>
 			</div>
