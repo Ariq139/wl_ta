@@ -59,7 +59,7 @@
 		<div class="ui container">
 		</br></br></br></br></br>
 			<div class="ui large breadcrumb">
-				<a class="section">Home</a>
+				<a class="section" href="{{ url('/') }}">Home</a>
 				<i class="right chevron icon divider"></i>
 				<div class="active section">Reservasi</div>
 			</div></br></br></br>

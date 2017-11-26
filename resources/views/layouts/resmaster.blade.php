@@ -7,29 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Reservasi - Konfirmasi</title>
+ @yield('title')
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://127.0.0.1:8000/css/calendar.min.css">
 
-  <style type="text/css">
-  body {
-    background-color: #FFFFFF;
-  }
-  .ui.menu .item img.logo {
-    margin-right: 1.5em;
-  }
-  .main.container {
-    margin-top: 7em;
-  }
-  .wireframe {
-    margin-top: 2em;
-  }
-  .ui.footer.segment {
-    margin: 5em 0em 0em;
-    padding: 5em 0em;
-  }
-  </style>
-
+  @yield('style')
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="{{ asset('js/semantic.min.js') }}"></script>
+	<script src="http://127.0.0.1:8000/js/calendar.min.js"></script>
 </head>
 <body>
 
@@ -54,21 +40,8 @@
 		</div>
 		<div class="ui container">
 			<div class="ui form">
-			<div class="ui large breadcrumb">
-				<a class="section" href="{{ url('/') }}">Home</a>
-				<i class="right chevron icon divider"></i>
-				<a class="section">Reservasi</a>
-				<i class="right chevron icon divider"></i>
-				<a class="section">Cari</a>
-				<i class="right chevron icon divider"></i>
-				<a class="section">Detail Tamu</a>
-				<i class="right chevron icon divider"></i>
-				<div class="active section">Konfirmasi</div>
-			</div></br></br></br>
+				@yield('content')
 			</div>
-		
-		
-			
 		</div>
 
   <div class="ui inverted vertical footer segment">
@@ -99,7 +72,7 @@
       </div>
     </div>
   </div>
-
+	@yield('scripts')
 
 
 </body></html>

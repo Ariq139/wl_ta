@@ -1,12 +1,10 @@
-@extends('layouts.resmaster')
-
-@section('title')
+<?php $__env->startSection('title'); ?>
 
   <title>Reservasi - Cari</title>
   
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('style')
+<?php $__env->startSection('style'); ?>
   <style type="text/css">
   body {
     background-color: #FFFFFF;
@@ -25,11 +23,11 @@
     padding: 5em 0em;
   }
   </style>
-  @endsection
+  <?php $__env->stopSection(); ?>
 
-  @section('content')
+  <?php $__env->startSection('content'); ?>
 			<div class="ui large breadcrumb">
-				<a class="section" href="{{ url('/') }}">Home</a>
+				<a class="section" href="<?php echo e(url('/')); ?>">Home</a>
 				<i class="right chevron icon divider"></i>
 				<a class="section">Reservasi</a>
 				<i class="right chevron icon divider"></i>
@@ -110,10 +108,10 @@
 					
 				</div>
 			</div>
-@endsection
+<?php $__env->stopSection(); ?>
  
 
-@section('scripts')
+<?php $__env->startSection('scripts'); ?>
 <script>
 	$('.dropdown')
 		.dropdown()
@@ -126,4 +124,5 @@
 	});
 </script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.resmaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

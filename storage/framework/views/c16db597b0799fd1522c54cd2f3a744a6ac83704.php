@@ -31,7 +31,7 @@
   }
   </style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="{{ asset('js/semantic.min.js') }}"></script>
+	<script src="<?php echo e(asset('js/semantic.min.js')); ?>"></script>
 	<script src="http://127.0.0.1:8000/js/calendar.min.js"></script>
 </head>
 <body>
@@ -42,15 +42,15 @@
         <!--<img class="logo" src="Fixed%20Menu%20Example%20-%20Semantic_files/logo.png">-->
         Nama
       </a>
-      <a href="{{ url('/') }}" class="item">Home</a>
-      <a class="item" href="{{ url('/reserve') }}">Reservasi</a>
-		<a class="item" href="{{ url('/about') }}">Tentang Kami</a>
+      <a href="<?php echo e(url('/')); ?>" class="item">Home</a>
+      <a class="item" href="<?php echo e(url('/reserve')); ?>">Reservasi</a>
+		<a class="item" href="<?php echo e(url('/about')); ?>">Tentang Kami</a>
 			<div class="right menu">
 					<div class="item">
-						<a class="ui button" href="{{ url('/login') }}">Log in</a>
+						<a class="ui button" href="<?php echo e(url('/login')); ?>">Log in</a>
 					</div>
 					<div class="item">
-						<a class="ui primary button" href="{{ url('/register') }}">Register</a>
+						<a class="ui primary button" href="<?php echo e(url('/register')); ?>">Register</a>
 					</div>
 				</div>
 			</div>
@@ -58,11 +58,11 @@
 		<div class="ui container">
 		<div class="ui form">
 			<div class="ui large breadcrumb">
-				<a class="section" href="{{ url('/') }}">Home</a>
+				<a class="section" href="<?php echo e(url('/')); ?>">Home</a>
 				<i class="right chevron icon divider"></i>
 				<a class="section">Reservasi</a>
 				<i class="right chevron icon divider"></i>
-				<a class="section" href="{{ url('reserve/search') }}">Cari</a>
+				<a class="section" href="<?php echo e(url('reserve/search')); ?>">Cari</a>
 				<i class="right chevron icon divider"></i>
 				<div class="active section">Detail Tamu</div>
 			</div></br></br></br>
