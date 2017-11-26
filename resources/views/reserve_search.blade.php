@@ -28,6 +28,7 @@
   @endsection
 
   @section('content')
+  </br></br></br></br></br>
 			<div class="ui large breadcrumb">
 				<a class="section" href="{{ url('/') }}">Home</a>
 				<i class="right chevron icon divider"></i>
@@ -121,9 +122,6 @@
 	$('.ui.radio.checkbox')
 		.checkbox()
 	;
-	$('#dob').calendar({
-		type: 'date'
-	});
 </script>
 
 @endsection

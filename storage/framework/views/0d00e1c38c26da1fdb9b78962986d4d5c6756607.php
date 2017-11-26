@@ -26,6 +26,7 @@
   <?php $__env->stopSection(); ?>
 
   <?php $__env->startSection('content'); ?>
+  </br></br></br></br></br>
 			<div class="ui large breadcrumb">
 				<a class="section" href="<?php echo e(url('/')); ?>">Home</a>
 				<i class="right chevron icon divider"></i>
