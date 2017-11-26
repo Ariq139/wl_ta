@@ -111,7 +111,7 @@
                          <td>{{ $kereta->username_adm }}</td>
                          <td>
                              <center>
-                                 <a href="{{ URL('ka-edit') }}/{{ $kereta->id }}" class="btn btn-sm btn-raised btn-info">Edit</a>
+                                 <a href="{{ URL('ka/update') }}/{{ $kereta->id }}" class="btn btn-sm btn-raised btn-info">Edit</a>
                                  <a href="{{ URL('ka-delete') }}/{{ $kereta->id }}" class="btn btn-sm btn-raised btn-danger">Hapus</a>
                              </center>
                          </td>

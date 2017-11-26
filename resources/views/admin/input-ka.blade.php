@@ -94,7 +94,7 @@
                      <form class="form-horizontal" action="{{ URL('ka-store') }}" method="POST">
                      {{ csrf_field() }}
                        <fieldset>
-                         <legend>FORM TAMBAH DATA KENDARAAN</legend>
+                         <legend>FORM TAMBAH DATA KERETA API</legend>
                              <div class="form-group label-floating">
                                <label class="control-label" for="focusedInput2">ID Kereta</label>
                                <input class="form-control" id="focusedInput2" type="text" name="id_ka" style="border-bottom-style: inset;">

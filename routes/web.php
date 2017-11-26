@@ -91,10 +91,9 @@ Route::get('ka-input', 'AdminController@create')->name('kacreate');
 Route::get('ka-list', 'AdminController@kalist')->name('kalist');
 Route::get('ka-list', 'AdminController@kalistindex')->name('kalistindex');
 Route::post('ka-store', 'AdminController@store')->name('kastore');
+Route::get('/ka/show/{id}', 'AdminController@show')->name('show');
+Route::get('/ka/update/{id}', 'AdminController@update')->name('update');
 
-
-     Route::get('/show/{id}', 'KendaraanController@show');
-     Route::post('/update/{id}', 'KendaraanController@update');
      Route::post('/destroy/{id}', 'KendaraanController@destroy');
 
 Route::get('berita-input', 'AdminController@beritainput')->name('beritainput');
