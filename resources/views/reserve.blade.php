@@ -7,10 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Tentang Kami</title>
+  <title>Reservasi</title>
 
- 
-	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/css/semantic.min.css">
 	<link rel="stylesheet" href="http://127.0.0.1:8000/css/calendar.min.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css">
 
@@ -44,54 +42,42 @@
         <!--<img class="logo" src="Fixed%20Menu%20Example%20-%20Semantic_files/logo.png">-->
         Nama
       </a>
-      <a href="/" class="item">Home</a>
-      <a class="item" href="reserve">Reservasi</a>
-		<a class="item" href="about">Tentang Kami</a>
+      <a href="{{ url('/') }}" class="item">Home</a>
+      <a class="item" href="{{ url('/reserve') }}">Reservasi</a>
+		<a class="item" href="{{ url('/about') }}">Tentang Kami</a>
 			<div class="right menu">
 					<div class="item">
-						<a class="ui button" href="login">Log in</a>
+						<a class="ui button" href="{{ url('/login') }}">Log in</a>
 					</div>
 					<div class="item">
-						<a class="ui primary button" href="register">Register</a>
+						<a class="ui primary button" href="{{ url('/register') }}">Register</a>
 					</div>
 				</div>
 			</div>
 		</div>
   
-<div class="ui container">
+		<div class="ui container">
+		</br></br></br></br></br>
 			<div class="ui large breadcrumb">
 				<a class="section">Home</a>
 				<i class="right chevron icon divider"></i>
-				<a class="active section">Reservasi</a>
-				</br></br></br></br></br></br></br></br>
-			</div>
+				<div class="active section">Reservasi</div>
+			</div></br></br></br>
 			<div class="ui form">
 				<form action="reserve/process" method="POST">
 				<div class="two fields">
-					<div class="two fields">
 						<div class="field">
-							<div class="inline fields">
-										<div class="field">
-											<div class="ui radio checkbox">
-												<input name="tiket" checked tabindex="0" class="hidden" type="radio" value="pp" id="pp">
-												<label>Pulang Pergi</label>
-											</div>
-										</div>
-										<div class="field">
-											<div class="ui radio checkbox">
-												<input name="tiket" tabindex="0" class="hidden" type="radio" value="single" id="single">
-												<label>Sekali Jalan</label>
-											</div>
-										</div>
-									</div>
+								<label>Jika tanggal kembali tidak diisi, otomatis akan menjadi tiket sekali jalan.</label>
 									<div class="ui calendar" id="start" name="start">
 										<div class="ui input left icon">
-											<i class="calendar icon"></i><input type="text" placeholder="Tanggal berangkat">
+											<i class="calendar icon"></i>
+											<input type="text" placeholder="Tanggal Berangkat" required>
 										</div>
 									</div>
 									<div class="ui calendar" id="end" name="end">
 										<div class="ui input left icon">
-											<i class="calendar icon"></i><input type="text" placeholder="Tanggal kembali">
+											<i class="calendar icon"></i>
+											<input type="text" placeholder="Tanggal kembali">
 										</div>
 									</div></br>
 										<div class="two fields">
@@ -149,12 +135,12 @@
 											</div>
 										</div>
 					
-						<select class="ui search dropdown" id="asal" name="asal">
+						<select class="ui search dropdown" id="asal" name="asal" required>
 							<option value="">Asal Stasiun</option>
 							<option value="lem">Lempuyangan</option>
 							<option value="tug">Tugu</option>
 					</select>
-					<select class="ui search dropdown" id="tujuan" name="tujuan">
+					<select class="ui search dropdown" id="tujuan" name="tujuan" required>
 						<option value="">Tujuan Stasiun</option>
 						<option value="bek">Bekasi</option>
 						<option value="mgr">Manggarai</option>
@@ -163,7 +149,6 @@
 					<div class="field">
 					
 					</div>
-				</div>
 			</div>
 		<div class="two fields">
 			<div class="two fields">
@@ -210,12 +195,10 @@
 		.checkbox()
 	;
 	$('#start').calendar({
-		type: 'date',
-		endCalendar: $('#end')
+		type: 'date'
 	});
 	$('#end').calendar({
-		type: 'date',
-		startCalendar: $('#start')
+		type: 'date'
 	});
 </script>
 

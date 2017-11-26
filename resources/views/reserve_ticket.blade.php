@@ -39,15 +39,15 @@
         <!--<img class="logo" src="Fixed%20Menu%20Example%20-%20Semantic_files/logo.png">-->
         Nama
       </a>
-      <a href="/" class="item">Home</a>
-      <a class="item" href="reserve">Reservasi</a>
-		<a class="item" href="about">Tentang Kami</a>
+      <a href="{{ url('/') }}" class="item">Home</a>
+      <a class="item" href="{{ url('/reserve') }}">Reservasi</a>
+		<a class="item" href="{{ url('/about') }}">Tentang Kami</a>
 			<div class="right menu">
 					<div class="item">
-						<a class="ui button" href="login">Log in</a>
+						<a class="ui button" href="{{ url('/login') }}">Log in</a>
 					</div>
 					<div class="item">
-						<a class="ui primary button" href="register">Register</a>
+						<a class="ui primary button" href="{{ url('/register') }}">Register</a>
 					</div>
 				</div>
 			</div>
