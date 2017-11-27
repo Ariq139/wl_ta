@@ -9,7 +9,7 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" ></script>
 		<script src="dist/semantic.min.js"></script>-->
 		
-		<title>Zis is Hoomu Peeji</title>
+		<title>Pesan Tiket Kereta Api</title>
 		
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/icon.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
@@ -182,7 +182,7 @@
 	<div class="masthead segment bg2">
     <div class="ui text container">
       <h1 class="ui inverted header">
-        Nama
+        Pesan Tiket dalam Satu Kali Klik
       </h1>
       <!--<h2>Deskripsi</h2>-->
       <a href="reserve"><div class="ui huge primary button">Reservasi</div></a>
